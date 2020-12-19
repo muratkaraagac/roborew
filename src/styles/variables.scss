@@ -1,0 +1,18 @@
+:root {
+  --bg-color-main: #F8F8F8;
+  --bg-color-light: #FFFFFF;
+  --text-color-dark: #0c2731;
+  --text-color-light: #375662;
+  --text-color-primary: #19c2ff;
+  --text-color-primary-light: #{lighten(#19C2FF, 25%)};
+  --color-gray: #e3e3e3;
+  --color-primary: #00b0f0;
+  --color-info: #BEE5EB;
+  --color-warning: #FEE4BA;
+  --color-danger: #F5C6CB;
+  --color-alternative: #CECECE;
+  --color-danger-light: #{lighten(#f5C6CB, 5%)};
+  --color-info-light: #{lighten(#BEE5EB, 5%)};
+  --color-warning-light: #FFF7EA;
+  --color-warning-light-try: #{lighten(#FEE4BA, 5%)};
+}

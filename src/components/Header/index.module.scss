@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--text-color-primary);
+  font: normal normal normal 50px/67px 'Bariol Regular';
+  letter-spacing: -0.5px;
+  margin-bottom: 0;
+}
+
+.nav {
+
+  &__item {
+    background-color: var(--bg-color-light);
+    padding: 12.5px 35px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    transition: .2s;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+
+    }
+
+    &.active, &:hover {
+      color: #fff;
+      background-color: var(--color-primary);
+    }
+
+  }
+
+}

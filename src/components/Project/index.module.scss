@@ -1,0 +1,137 @@
+.project {
+  &__name {
+    font: normal normal 600 24px/32px 'SF UI Display Medium';
+    letter-spacing: 0;
+    color: var(--color-primary);
+  }
+
+  &__table {
+    width: 100%;
+    margin-bottom: 22px;
+
+    & th {
+      font: normal normal 600 16px/21px 'SF UI Display Medium';
+      letter-spacing: 0;
+      color: var(--text-color-dark)
+    }
+
+    & td {
+      font: normal normal 300 16px/21px 'SF UI Display Medium';
+      letter-spacing: 0;
+      color: var(--text-color-light);
+    }
+  }
+
+  &__action {
+    background-color: var(--text-color-primary);
+    border-color: var(--text-color-primary);
+    padding: 12.5px 38px;
+    height: auto;
+  }
+
+  &__icon {
+    font-size: 80px;
+    color: var(--color-gray);
+    margin-bottom: 55px;
+  }
+}
+
+.loading_text {
+  font: normal normal medium 18px/24px 'SF UI Display Medium';
+  letter-spacing: 0;
+  color: var(--color-gray)
+}
+
+.boxes {
+  margin-right: 5rem;
+
+  &__item {
+    margin-bottom: 6px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 20px;
+    background-color: var(--color-alternative);
+
+    & > h6 {
+      font: normal normal 600 26px/35px 'SF UI Display Medium';
+      letter-spacing: 0;
+      color: var(--text-color-dark);
+      margin-bottom: 10px;
+    }
+
+    & > span {
+      font: normal normal medium 9px/12px 'SF UI Display Medium';
+      letter-spacing: 0;
+      color: var(--text-color-dark);
+
+    }
+  }
+
+}
+
+.charts {
+  width: 300px;
+  height: 300px;
+}
+
+.charts text {
+  font: normal normal 600 15px/20px 'SF UI Display Medium'!important;
+  letter-spacing: 0!important;
+  color: var(--text-color-dark)!important;
+}
+
+.log {
+  &__item {
+    margin-bottom: 1rem;
+  }
+}
+
+.error {
+  background-color: var(--color-danger);
+
+  & > div:nth-child(2) {
+    background-color: var(--color-danger-light)
+  }
+}
+
+.warning {
+  background-color: var(--color-warning);
+
+  & > div:nth-child(2) {
+    background-color: var(--color-warning-light)
+  }
+}
+
+.info {
+  background-color: var(--color-info);
+
+  & > div:nth-child(2) {
+    background-color: var(--color-info-light)
+  }
+}
+
+.radio {
+  &__wrapper {
+    margin-bottom: 8px;
+    display: flex;
+    width: 100%;
+  }
+
+  &__item {
+    flex: 1;
+    text-align: center;
+    border: none!important;
+    background-color: var(--bg-color-main);
+    font-weight: bold;
+
+    &::before {
+      background-color: transparent!important;
+    }
+
+    & .ant-radio-button-wrapper-checked {
+      background-color: black;
+    }
+  }
+}

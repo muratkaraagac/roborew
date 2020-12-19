@@ -1,0 +1,83 @@
+.main {
+  background-color: var(--bg-color-main);
+  height: 100vh;
+  display: flex;
+  padding: 62px 180px;
+}
+
+.container {
+  background-color: var(--bg-color-light);
+  flex: 1;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  font: normal normal 600 54px/72px 'SF UI Display Medium';
+  letter-spacing: 0;
+  color: var(--text-color-primary);
+  margin: 55px 0;
+}
+
+.button {
+  background-color: var(--text-color-primary);
+  border-color: var(--text-color-primary);
+
+  padding: 12.5px 38px;
+  height: auto;
+}
+
+.recent {
+  margin-top: auto;
+  margin-bottom: 85px;
+
+  &__header {
+    font: normal normal 600 32px/43px 'SF UI Display Medium';
+    letter-spacing: 0;
+    color: var(--text-color-dark);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+}
+
+.project{
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__box {
+    width: 128px;
+    height: 128px;
+    border: 1px solid var(--color-gray);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+  }
+
+  &:hover &__box {
+    box-shadow: 4px 5px 5px #eee;
+  }
+
+  &__title {
+    margin-top: 10px;
+    text-align: center;
+    font: normal normal medium 12px/16px 'SF UI Display Medium';
+    letter-spacing: 0;
+    color: var(--text-color-dark);
+  }
+
+  &__icon {
+    font-size: 50px;
+    color: var(--color-gray)
+  }
+}
